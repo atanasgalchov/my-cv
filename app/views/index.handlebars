@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <title>CV | Atanas</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+     <link rel="shortcut icon" href="../public/favicon.png">
+     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <link rel="stylesheet" href="../public/plugins/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="../public/plugins/font-awesome/css/font-awesome.css">
+     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+  <link rel="stylesheet" href="../public/plugins/github-activity.css">
+
+  <link rel="stylesheet" href="../public/plugins/animate.css">
+     <link id="theme-style" rel="stylesheet" href="../public/css/styles.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css" />
+  <script type="text/javascript" src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+
+</head>
+
+<body>
+    <!-- ******HEADER****** -->
+    <header class="header">
+        <div class="container">
+            <img class="profile-image img-responsive pull-left" src="../public/images/profile.jpg" alt="A. Galchov" />
+            <div class="profile-content pull-left">
+                <h1 class="name">Atanas Galchov</h1>
+                <h2 class="desc">Web App Developer</h2>
+
+               <ul class="social list-inline">
+                    <li><a href="https://www.facebook.com/nasko.galchev"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/atanas-galchov-451ba6128/"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/atanasgalchov"><i class="fa fa-github-alt"></i></a></li>
+
+                    <li class="last-item"><a href="mailto:atanasgalchov@yahoo.com"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+            </div><!--//profile-->
+
+              <div class="contact-toggle">
+                <a class="btn btn-cta-primary pull-right toggle-btn" href="http://themes.3rdwavemedia.com/" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>
+                <ul class="toggled-bar social-icons icon-circle list-unstyled list-inline animated">
+                  <li title="Use Messenger"> <a href="https://m.me/naskogalchev"><i class="fa fa-comment"></i></a></li>
+                  <li title="Use Skype"><a href="skype:atanasgalchov@yahoo.com?chat"><i class="fa fa-skype"></i></a></li>
+
+                  <li title="Use Contact form" class="contact-me-btn"> <a href="#"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+              </div>
+        </div><!--//container-->
+    </header><!--//header-->
+      {{#if isSend}}<h1 class="success-message animated tada">Your message has been successfully sent!</h1>{{/if}}
+
+
+    <div class="contact-me-form animated"  {{#if messages}} style="display: block"{{/if}}>
+      <div class="close-form"><i class="fa fa-times"></i></div>
+      <h1>Contact me</h1>
+      <ul class="error-message list-group">{{#each messages}}
+                                    <li class="list-group-item list-group-item-danger">{{this}}</li>
+                                 {{/each}}</ul>
+
+      <form class="cf" action="/sendmessage" method="POST">
+        <div class="half left cf">
+          <input type="text" name="name" id="input-name" placeholder="Name">
+          <input type="email" name="email" id="input-email" placeholder="Email address">
+          <input type="text" name="subject" id="input-subject" placeholder="Subject">
+        </div>
+        <div class="half right cf">
+          <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+        </div>
+        <input type="submit" class="btn btn-success" value="Submit" id="input-submit">
+      </form>
+
+    </div>
+
+
+
+
+
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-md-8 col-sm-12 col-xs-12">
+                <section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                            <p>If you looking this page it means that i'm interesting for you.Congratulations you is on right place.In next few rows you will learn bigger part of my professionl skills.</p>
+
+        <p>I am a dedicated, organized and methodical individual. I have good interpersonal skills, am an excellent team worker and am keen and very willing to learn and develop new skills. I am reliable and dependable and often seek new responsibilities within a wide range of employment areas. I have an active and dynamic approach to work and getting things done. I am determined and decisive. I identify and develop opportunities.</p>
+
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->
+
+               <section class="latest section">
+                    <div class="section-inner">
+                        <h2 class="heading">Latest Projects</h2>
+                        <div class="content">
+
+                            <div class="item featured text-center">
+                                <h3 class="title"><a href="https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm" target="_blank">Website for Govedarci and Maliovica resorts</a></h3>
+                                <p class="summary">The website present on the tourists, why their choice to be Govedartsi destination</p>
+                                <div class="featured-image">
+                                    <a href="https://wrapbootstrap.com/theme/delta-promote-mobile-app-effectively-WB09R23P8?ref=3wm" target="_blank">
+                                    <img class="img-responsive project-image" src="../public/images/projects/govedartsi-portfolio.png" alt="project name" />
+                                    </a>
+                                    <div class="ribbon">
+                                        <div class="text">Web</div>
+                                        </div>
+                                    </div>
+
+                                <div class="desc text-left">
+                                    <p>The website is a based on ASP .NET for back-end, JavaScript,HTML5,CSS3 and Bootsrap for front-end and MS SQL Server for database.The website is responsive and cross-platform.</p>
+                                    <p>In this moment is active first version,but in the further the project will growth</p>
+                                </div><!--//desc-->
+                                <a class="btn btn-cta-secondary" href="http://govedartsi-bg.com" target="_blank"><i class="fa fa-thumbs-o-up"></i> Back my project</a>
+                            </div><!--//item-->
+                            <hr class="divider" />
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="http://grozdence.cf/index.html#" target="_blank">
+                                <img class="img-responsive project-image" src="../public/images/projects/soft-orders-portfolio.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a href="http://grozdence.cf/index.html#" target="_blank">Software orders</a><span class="label label-theme">Open Source</span></h3>
+                                    <p>The website is group project which represent software orders and allow follow their status.The app have roles claims via which allow admin assigns task on teams.The custumers can follow their orders by all time.The website is a single page application based on JavaScript.</p>
+                                    <p><a class="more-link" href="http://grozdence.cf/index.html#" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://github.com/atanasgalchov/IscarTour.NET/tree/master/IskarTour" target="_blank">
+                                <img class="img-responsive project-image" src="../public/images/projects/iskar-tour-portfolio.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a href="https://github.com/atanasgalchov/IscarTour.NET/tree/master/IskarTour" target="_blank">Iskar Tour Maps</a><span class="label label-theme">Open Source</span></h3>
+                                    <p>That is website which suggest paper mountain map for sale and interactive and 3D map free online.
+                                        The app is ASP .NET based with MS SQL Server for database.The website have roles claims and system for control on content.
+                                        The website is not yet ready and  is not active.The source code is open source and can watch in github.</p>
+                                    <p><a class="more-link" href="https://github.com/atanasgalchov/IscarTour.NET/tree/master/IskarTour" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://github.com/atanasgalchov/PizzaMoreWebSiteSimpleMVC" target="_blank">
+                                <img class="img-responsive project-image" src="../public/images/projects/pizza-more-portfolio.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a href="https://github.com/atanasgalchov/PizzaMoreWebSiteSimpleMVC" target="_blank">Pizza - Suggestions</a><span class="label label-theme">Open Source</span></h3>
+                                    <p>Online pizza orders.C# application with created simple Http server by MVC pattern.I use MS SQL Server for database.</p>
+                                    <p><a class="more-link" href="https://github.com/atanasgalchov/PizzaMoreWebSiteSimpleMVC" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->
+
+                <section class="projects section">
+                    <div class="section-inner">
+                        <h2 class="heading">Other Projects</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><a href="#">Sharp - Store</a><span class="label label-theme">Open Source</span></h3>
+                                <p class="summary">Simple online store for sharps made on C#.</p>
+                                <p><a class="more-link" href="https://github.com/atanasgalchov/SimpleHttpServer" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><a href="#">Prodavachnik</a> <span class="label label-theme">Open Source</span></h3>
+                                <p class="summary">Simple single page application made on JavaScript with Kinvey database.</p>
+                                <p><a class="more-link" href="https://atanasgalchov.github.io/ProdavachnikSinglePageApp" target="_blank"><i class="fa fa-external-link"></i> View on GitHub</a></p>
+                            </div><!--//item-->
+
+                            <a class="btn btn-cta-secondary" href="https://github.com/atanasgalchov/">More<i class="fa fa-chevron-right"></i></a>
+
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->
+
+                <section class="experience section">
+                    <div class="section-inner">
+                        <h2 class="heading">Work Experience</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">Technical Support Engineer<span class="place"><a href="#">Metropoliten</a></span> <span class="year">(2014-)</span></h3>
+                                <p>Installed software, modified and repaired hardware and resolved technical issues.</p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Network Technician<span class="place"><a href="#">Vivacom</a></span> <span class="year">(2013 - 2014)</span></h3>
+                                <p>Set up equipment for clients, including installing cables and hardware.</p>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->
+                <section class="github section">
+                    <div class="section-inner">
+                        <h2 class="heading">My GitHub</h2>
+                      <div class="calendar img-responsive"></div>
+                        <div id="ghfeed" class="ghfeed">
+                        </div>
+
+                    </div><!--//secton-inner-->
+                </section><!--//section-->
+            </div><!--//primary-->
+            <div class="secondary col-md-4 col-sm-12 col-xs-12">
+                 <aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Sofia, Sofia City, BG</li>
+                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="mailto:atanasgalchov@yahoo.com">atanasgalchov@yahoo.com</a></li>
+                                <li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="http://www.atanasgalchov.cv">http://www.atanasgalchov.cv</a></li>
+                                <li><i class="fa fa-download"></i><span class="sr-only">CV:</span><a download="mycv" href="public/mycv.pdf">Download CV</a></li>
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//aside-->
+
+                <aside class="skills aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Skills</h2>
+                        <div class="content">
+                            <p class="intro">
+                                Below skills level graph is based on my grades in SoftUni</p>
+
+                            <div class="skillset">
+
+                                <div class="item">
+                                    <h3 class="level-title">C# .Net Framework<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to add more info...">Expert</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="60%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">JavaScript<span class="level-label">Expert</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="80%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">HTML5, CSS3<span class="level-label">Expert</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="50%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">MS SQL Server<span class="level-label">Pro</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="90%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+
+                                <p><a class="more-link" href="public/mycv.pdf"><i class="fa fa-external-link"></i> More on my CV</a></p>
+                            </div>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+
+
+                <aside class="education aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><i class="fa fa-graduation-cap"></i>Software Engeneering</h3>
+                                <h4 class="university">Sofware University<span class="year">(2015-2018)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fa fa-graduation-cap"></i>Communications and Security systems</h3>
+                                <h4 class="university">Higher School of Transport "Todor Kableshkov"<span class="year">(2009-2013)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fa fa-graduation-cap"></i>Computer Technologies</h3>
+                                <h4 class="university">High School "Nikola Vapcarov"<span class="year">(2005-2009)</span></h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+
+                <aside class="languages aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Languages</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                    <span class="title"><strong>Bulgarian:</strong></span>
+                                    <span class="level">Native Speaker <br class="visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>English:</strong></span>
+                                    <span class="level">B1<br class="visible-sm visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></span>
+                                </li><!--//item-->
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+
+            </div><!--//secondary-->
+        </div><!--//row-->
+    </div><!--//masonry-->
+
+    <!-- ******FOOTER****** -->
+    <footer class="footer">
+        <div class="container text-center">
+                <small class="copyright">Thanks for visit   <i class="fa fa-smile-o"></i></small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="../public/plugins/github-activity.js"></script>
+
+    <script type="text/javascript" src="../public/plugins/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../public/plugins/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../public/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../public/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
+
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script src="http://file.urin.take-uma.net/jquery.balloon.min.js"></script>
+
+
+    <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+    <script type="text/javascript" src="../public/js/main.js"></script>
+
+
+
+
+
+
+</body>
+</html>
+
