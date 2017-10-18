@@ -31,7 +31,7 @@ let getAuth = function () {
     service: 'Gmail',
     auth: {
       user: 'atanasgalchov@gmail.com', // Your email id
-      pass: 'panshpa123' // Your password
+      pass: 'Your password' // Your password
     }
   });
 
